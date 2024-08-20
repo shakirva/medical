@@ -44,9 +44,10 @@
 :root {
     --dark-bg: #111111;
     --secondary-dark: #222222;
-    --accent-color: #c93d80;
-    --accent-color-1: #872c58;
-    --accent-color-2: #cd5a91;
+    --accent-color: #005000;    
+    --accent-color-1: #00AF00 ;
+    --accent-color-2:  #007700;
+    ;
     --gray-color: #aaaaaa;
     --font-1: 'Abhaya Libre', serif;
     --font-2: 'Open Sans', sans-serif;
