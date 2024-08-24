@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="css/vendor/solid.css">
     <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Seniorsy - Single Services</title>
+    <style>
+        .active-service {
+            background-color: green !important;
+            color: white !important;
+        }
+    </style>
+    <title>Services</title>
 </head>
 
 <body>
@@ -31,12 +37,10 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <div class="logo-container">
-                            <img src="image/logo.png" alt="" class="img-fluid">
+                            <img src="image/logo.png" alt="Logo" class="img-fluid">
                         </div>
                     </a>
-                    <button class="navbar-toggler accent-color border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler accent-color border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,8 +58,7 @@
                                 <a class="nav-link" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
-                        <a href="" type="button" class="btn button bg-accent-color" type="submit">Book An
-                            Appointment</a>
+                        <a href="#" type="button" class="btn button bg-accent-color">Book An Appointment</a>
                     </div>
                 </div>
             </nav>
@@ -65,11 +68,11 @@
 
     <main>
         <!-- Banner -->
-        <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+        <section class="section position-relative" style="background-image: url(image/aaa.jpg);">
             <div class="r-container">
                 <div class="image-overlay"></div>
                 <div class="position-relative" style="z-index: 2;">
-                    <h1 class="font-1 fw-bold text-white"> Services</h1>
+                    <h1 class="font-1 fw-bold text-white">Services</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item fw-bold"><a href="index.html">Home</a></li>
@@ -80,6 +83,7 @@
             </div>
         </section>
 
+        <!-- Services Section -->
         <section class="section">
             <div class="r-container">
                 <div class="d-flex flex-lg-row flex-column-reverse gap-4">
@@ -88,39 +92,31 @@
                             <div class="bg-light p-4 rounded-3">
                                 <h5 class="font-1 fw-bold mb-3">All Services</h5>
                                 <div class="list-group rounded-0" style="gap: 0.65rem;">
-                                    <a href="#" class="list-group-item list-group-item-action shadow active"
-                                        aria-current="true" onclick="showServiceContent('diabetology')">
+                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('diabetology', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Diabetology
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow"
-                                        aria-current="true" onclick="showServiceContent('gynecology')">
+                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('gynecology', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Gynecology
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow"
-                                        aria-current="true" onclick="showServiceContent('fetal-medicine')">
+                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('fetal-medicine', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Fetal Medicine
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow"
-                                        aria-current="true" onclick="showServiceContent('sample1')">
+                                    <!-- <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('sample1', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> SAMPLE 1
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow"
-                                        aria-current="true" onclick="showServiceContent('sample2')">
+                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('sample2', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> SAMPLE 2
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow"
-                                        aria-current="true" onclick="showServiceContent('sample3')">
+                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('sample3', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> SAMPLE 3
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
-                            <div class="position-relative rounded-3 overflow-hidden p-4"
-                                style="background-image: url(image/dummy-img-600x700.jpg); background-size: cover; background-position: center;">
+                            <div class="position-relative rounded-3 overflow-hidden p-4" style="background-image: url(image/); background-size: cover; background-position: center;">
                                 <div class="image-overlay-2"></div>
-                                <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center text-white p-4 text-center"
-                                    style="z-index: 2;">
+                                <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center text-white p-4 text-center" style="z-index: 2;">
                                     <h4 class="font-1 fw-bold lh-1">Need Any Help ?</h4>
-                                    <span class="font-1 fw-bold fs-4">+123-456-789</span>
+                                    <span class="font-1 fw-bold fs-4"></span>
                                     <a href="contact.html" type="button" class="btn btn-dark px-4 py-3 fs-5">Contact Us</a>
                                 </div>
                             </div>
@@ -133,8 +129,7 @@
                             <div class="d-flex flex-column mb-3">
                                 <h3 class="font-2 fw-bold">Service Description</h3>
                                 <p class="fs-5" style="text-align: justify;">
-                                 
-A Service Description is a detailed explanation of the services provided by a business, organization, or professional. It outlines what the service entails, the processes involved, the benefits to the customer, and often includes details on how the service is delivered. The goal of a service description is to inform potential customers or clients about what they can expect from the service, helping them decide whether it meets their needs.
+                                    A Service Description is a detailed explanation of the services provided by a business, organization, or professional. It outlines what the service entails, the processes involved, the benefits to the customer, and often includes details on how the service is delivered. The goal of a service description is to inform potential customers or clients about what they can expect from the service, helping them decide whether it meets their needs.
                                 </p>
                             </div>
                         </div>
@@ -144,6 +139,7 @@ A Service Description is a detailed explanation of the services provided by a bu
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <footer style="margin-top: 0px;">
        
@@ -155,10 +151,8 @@ A Service Description is a detailed explanation of the services provided by a bu
                                 <div class="logo-container">
                                     <img src="image/logo-2.png" alt="Logo" class="img-fluid">
                                 </div>
-                                <p>
-                                    Suspendisse congue tincidunt nisi, in eleifend metus placerat eu. Nunc eget tristique
-                                    nisi. Nunc a eros vitae magna bibendum tempus. Mauris ipsum enim, sollicitudin sit amet
-                                    consequat at.
+                                <p class="mt-3 ">
+                                    Providing exceptional medical services in Thrissur.
                                 </p>
                             </div>
                         </div>
@@ -214,48 +208,44 @@ A Service Description is a detailed explanation of the services provided by a bu
         </footer>
     </footer>
 
-    <script src="js/vendor/fslightbox.js"></script>
-    <script src="js/masonry.js"></script>
 
     <script>
-        const serviceContents = {
-            "diabetology": {
-                "image": "image/service-1.webp",
-                "description": "Diabetology is a specialized field of medicine dedicated to the study and treatment of diabetes mellitus, a chronic condition that affects millions worldwide. Diabetes occurs when the body either cannot produce sufficient insulin or cannot effectively use the insulin it produces, leading to elevated blood sugar levels. The field of diabetology covers various types of diabetes, including Type 1, an autoimmune disorder where the immune system attacks insulin-producing cells; Type 2, where the body becomes resistant to insulin or doesn’t produce enough; and gestational diabetes, which occurs during pregnancy. Diabetologists work to manage these conditions through lifestyle interventions, medication, and continuous monitoring, aiming to prevent complications and improve patients' quality of life."
-            },
-            "gynecology": {
-                "image": "image/service-2.jpg",
-                "description": "Gynecology is a branch of medicine that focuses on the health of the female reproductive system, including the uterus, ovaries, fallopian tubes, and breasts. It encompasses a wide range of issues, from routine care such as annual exams and screenings to the diagnosis and treatment of disorders like menstrual irregularities, endometriosis, and ovarian cysts. Gynecology also addresses reproductive health concerns, including contraception, fertility, and pregnancy-related conditions. Gynecologists play a crucial role in women's health by providing preventive care, managing hormonal conditions, and offering treatments that can range from medication to surgical interventions, ensuring the overall well-being of their patients. involves the medical practice dealing with the health of the female reproductive system."
-            },
-            "fetal-medicine": {
-                "image": "image/service-3.jpg",
-                "description": "Fetal medicine, also known as maternal-fetal medicine, is a specialized field within obstetrics that focuses on the health and well-being of the fetus during pregnancy. It involves the monitoring, diagnosis, and treatment of fetal conditions, including genetic disorders, congenital anomalies, and growth abnormalities. Specialists in fetal medicine use advanced imaging techniques like ultrasound and fetal MRI, as well as diagnostic procedures such as amniocentesis, to assess the fetus's development and identify potential issues early on. This field also includes the management of high-risk pregnancies, where complications such as preeclampsia, gestational diabetes, or multiple pregnancies might endanger the health of the mother or the fetus. Fetal medicine aims to optimize outcomes for both mother and child, sometimes involving in-utero treatments or planning for specialized care immediately after birth.."
-            },
-            "sample1": {
-                "image": "image/sample1.jpg",
-                "description": "Sample Service 1 description goes here. It provides detailed information about this specific service."
-            },
-            "sample2": {
-                "image": "image/sample2.jpg",
-                "description": "Sample Service 2 description goes here. It provides detailed information about this specific service."
-            },
-            "sample3": {
-                "image": "image/sample3.jpg",
-                "description": "Sample Service 3 description goes here. It provides detailed information about this specific service."
-            }
-        };
+        function showServiceContent(service, element) {
+            const serviceContent = {
+                'diabetology': {
+                    'image': 'image/service-1.webp',
+                    'description': 'Diabetology is a specialized field of medicine dedicated to the study and treatment of diabetes mellitus, a chronic condition that affects millions worldwide. Diabetes occurs when the body either cannot produce sufficient insulin or cannot effectively use the insulin it produces, leading to elevated blood sugar levels. The field of diabetology covers various types of diabetes, including Type 1, an autoimmune disorder where the immune system attacks insulin-producing cells; Type 2, where the body becomes resistant to insulin or doesn’t produce enough; and gestational diabetes, which occurs during pregnancy. Diabetologists work to manage these conditions through lifestyle interventions, medication, and continuous monitoring, aiming to prevent complications and improve patients quality of life.'
+                },
+                'gynecology': {
+                    'image': 'image/service-2.jpg',
+                    'description': 'Gynecology is a branch of medicine that focuses on the health of the female reproductive system, including the uterus, ovaries, fallopian tubes, and breasts. It encompasses a wide range of issues, from routine care such as annual exams and screenings to the diagnosis and treatment of disorders like menstrual irregularities, endometriosis, and ovarian cysts. Gynecology also addresses reproductive health concerns, including contraception, fertility, and pregnancy-related conditions. Gynecologists play a crucial role in womens health by providing preventive care, managing hormonal conditions, and offering treatments that can range from medication to surgical interventions, ensuring the overall well-being of their patients. involves the medical practice dealing with the health of the female reproductive system.'
+                },
+                'fetal-medicine': {
+                    'image': 'image/service-3.jpg',
+                    'description': 'Fetal medicine, also known as maternal-fetal medicine, is a specialized field within obstetrics that focuses on the health and well-being of the fetus during pregnancy. It involves the monitoring, diagnosis, and treatment of fetal conditions, including genetic disorders, congenital anomalies, and growth abnormalities. Specialists in fetal medicine use advanced imaging techniques like ultrasound and fetal MRI, as well as diagnostic procedures such as amniocentesis, to assess the fetuss development and identify potential issues early on. This field also includes the management of high-risk pregnancies, where complications such as preeclampsia, gestational diabetes, or multiple pregnancies might endanger the health of the mother or the fetus. Fetal medicine aims to optimize outcomes for both mother and child, sometimes involving in-utero treatments or planning for specialized care immediately after birth.'
+                },
+                'sample1': {
+                    'image': 'image/sample1.jpg',
+                    'description': 'Detailed information about Sample 1 services.'
+                },
+                'sample2': {
+                    'image': 'image/sample2.jpg',
+                    'description': 'Detailed information about Sample 2 services.'
+                },
+                'sample3': {
+                    'image': 'image/sample3.jpg',
+                    'description': 'Detailed information about Sample 3 services.'
+                }
+            };
 
-        function showServiceContent(serviceKey) {
-            const service = serviceContents[serviceKey];
-            document.getElementById('service-content').innerHTML = `
-                <img src="${service.image}" alt="Service Image" class="img-fluid">
-                <div class="d-flex flex-column mb-3">
-                    <h3 class="font-2 fw-bold">${serviceKey.replace('-', ' ')}</h3>
-                    <p class="fs-5" style="text-align: justify;">
-                        ${service.description}
-                    </p>
-                </div>
-            `;
+            // Change the image and description based on the service selected
+            document.querySelector('#service-content img').src = serviceContent[service].image;
+            document.querySelector('#service-content h3').textContent = service.charAt(0).toUpperCase() + service.slice(1);
+            document.querySelector('#service-content p').textContent = serviceContent[service].description;
+
+            // Add active class to the selected service
+            document.querySelectorAll('.list-group-item').forEach(item => item.classList.remove('active-service'));
+            element.classList.add('active-service');
         }
     </script>
 </body>
