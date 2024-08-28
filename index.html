@@ -13,6 +13,26 @@
     <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>  Homepage</title>
+    <style>
+        /* Background image styling */
+       
+
+        .department-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+           
+        }
+
+        .department-item .line {
+            flex: 1;
+            border-bottom: 1px solid #000000; /* Underline Effect */
+            margin-left: 15px;
+            margin-right: 70px;
+        }
+
+        
+    </style>
 </head>
 
 <body>
@@ -109,13 +129,13 @@
             </div>
         </section>
 
-        <section class="position-relative ms-3" style="margin-top: -80px; ">
+        <section class="position-relative ms-5" style="margin-top: -80px; ">
             <div class="r-container px-lg-0 px-4">
                 <div class="overflow-hidden rounded-4">
                     <div class="row row-cols-1 row-cols-lg-4 g-4">
                         
                         <!-- Diabetology Section -->
-                        <div class="col bg-accent-color-1 text-white d-flex align-items-center justify-content-center rounded-4" style="margin-right: 50px; width:330px;">
+                        <div class="col bg-accent-color-1 text-white d-flex align-items-center justify-content-center rounded-4" style="margin-right: 40px; margin-left: auo; width:260px;">
                             <div class="d-flex flex-column p-4 text-center">
                                 <span class="fw-bold font-1 p-4 fs-3 lh-1">
                                     Diabetology
@@ -124,16 +144,26 @@
                         </div>
                         
                         <!-- Gynecology Section -->
-                        <div class="col bg-accent-color text-white d-flex align-items-center justify-content-center rounded-4" style="margin-right: 50px; width:330px;">
+                        <div class="col bg-accent-color-1 text-white d-flex align-items-center justify-content-center rounded-4" style="margin-right: 40px; margin-left: aut; width:260px;">
                             <div class="d-flex flex-column p-4 text-center">
                                 <span class="fw-bold font-1 p-4 fs-3 lh-1">
                                     Gynecology
                                 </span>
                             </div>
                         </div>
-        
+                         
+<!-- Fetal Medicine Section -->
+                        <div class="col bg-accent-color-1 text-white d-flex align-items-center justify-content-center rounded-4" style=" margin-right: 40px; margin-left: auo; width:260px;">
+                            <div class="d-flex flex-column p-4 text-center">
+                                <span class="fw-bold font-1 p-4 fs-3 lh-1">
+                                    Radiology
+                                </span>
+                            </div>
+                        </div>
+
+
                         <!-- Fetal Medicine Section -->
-                        <div class="col bg-accent-color-2 text-white d-flex align-items-center justify-content-center rounded-4" style="width:330px;">
+                        <div class="col bg-accent-color-1 text-white d-flex align-items-center justify-content-center rounded-4" style="margin-right: ; width:260px;">
                             <div class="d-flex flex-column p-4 text-center">
                                 <span class="fw-bold font-1 p-4 fs-3 lh-1">
                                     Fetal Medicine
@@ -154,7 +184,7 @@
                     <div class="col mb-3 pe-lg-3 position-relative">
                         
                         <div class="position-relative pe-5">
-                            <img src="image/3.png" alt="" class="img-fluid rounded-5" style="z-index: -2;">
+                            <img src="image/3.png" alt="" class="img-fluid rounded-5" style="z-index: -2; margin-left:25px;">
                             <div class="position-absolute bottom-0 start-0 ms-4 mb-4">
                                 <!-- Button trigger modal -->
                                 <!-- <div class="d-flex flex-row gap-3 align-items-center">
@@ -282,7 +312,7 @@
                 </div>
         
                 <!-- Right Side - Doctor List with Auto-Scroll -->
-                <div class="col-md-6 overflow-auto" id="doctor-list" style="height: 500px;">
+                <div class="col-md-6 overflow-auto  " id="doctor-list" style="height: 500px; margin-top: 100px;">
                     <!-- Doctor 1 -->
                     <div class="d-flex align-items-center mb-3 p-4" style="background-color: rgba(128, 215, 128, 0.3);
  border-radius: 10px; padding: 15px;">
@@ -301,13 +331,13 @@
                         </div>
                     </div>
                     <!-- Doctor 3 -->
-                    <div class="d-flex align-items-center mb-3 p-4" style="background-color: rgba(128, 215, 128, 0.3); border-radius: 10px; padding: 15px;">
+                    <!-- <div class="d-flex align-items-center mb-3 p-4" style="background-color: rgba(128, 215, 128, 0.3); border-radius: 10px; padding: 15px;">
                         <img src="" alt="Dr. Divya Das" class="img-fluid rounded-4 me-3" style="width: 110px; height: 120px;">
                         <div>
                             <h5 class="fw-bold mb-0">Dr. Divya Das</h5>
                             <p class="mb-0">MD (Physician) Diabetologist</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Add more doctors as needed -->
                 </div>
             </div>
@@ -379,48 +409,130 @@
             </div>
         </div>
         
-        <div class="container-fluid p-0 ">
-            <div class="row g-0">
-                <!-- Images Column -->
+        <div class="container-fluid mt-5 mb-5" style=" 
+            background-image: url('image/medicall.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            padding: 40px; /* Add some padding to the content */
+            border-radius: 10px; /* Optional: Add some rounding to corners */
+            opacity: 0.9; /* Optional: Add some transparency */
+            filter: blur(px); /* Optional: Add some blurring effect */
+            /* Text color change for better visibility */
+         ">
+
+            
+
+            <h2 class="text-center mb-4">Departments</h2>
+            <!-- Visible on Desktop: Show All Departments -->
+            <div class="row d-none d-md-flex">
                 <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <img src="image/mixed-images.png" class="img-fluid rounded ms-md-5" alt="CT Scan">
-                        </div>
+                    <div class="department-item">
+                        <span class="fs-2">General Medicine</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2" >Diabetology</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Gynecology</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Infertility Department</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Orthopedic Department</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Pediatric Department</span>
+                        <div class="line"></div>
                     </div>
                 </div>
-        
-                <!-- Text Column (Aligned to the Right) -->
-<div class="col-md-6 d-flex align-items-center mt-5 mb-5">
-    <div class="p-4 text-white rounded" style="
-        background-image: url('image/facility.jpg.png'); 
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-color: rgba(0, 128, 0, 0.8); /* Fallback color for the background */
-        width: 100%;
-        height: 100%; /* Ensure it takes full height of the column */
-        
-    ">
-        <h2 class="mb-4">Our Facilities</h2>
-        <ul class="list-unstyled">
-            <li class="mb-4">
-                <h4>Pharmacy</h4>
-                <p>Our on-site pharmacy provides personalized pharmaceutical care and medication management services to ensure you receive the best possible treatment.</p>
-            </li>
-            <li class="mb-4">
-                <h4>Observation room</h4>
-                <p>Equipped with state-of-the-art monitoring equipment, our observation room offers a comfortable setting for patients during their recovery process.</p>
-            </li>
-            <li>
-                <h4>Radiology</h4>
-                <p>Our radiology department features advanced imaging technology that aids in accurate diagnosis and treatment planning.</p>
-            </li>
-        </ul>
-    </div>
-</div>
-
+    
+                <div class="col-md-6">
+                    <div class="department-item">
+                        <span class="fs-2">Dermatology Department</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Psychology Department</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">ENT Department</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Lab</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Pharmacy</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span class="fs-2">Scanning</span>
+                        <div class="line"></div>
+                    </div>
+                </div>
             </div>
+    
+            <!-- Visible on Mobile: Show Only Three Departments with "More" Button -->
+            <div class="row d-block d-md-none">
+                <div class="col-12">
+                    <!-- First three departments always visible -->
+                    <div class="department-item">
+                        <span>General Medicine</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span>Diabetology</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="department-item">
+                        <span>Gynecology</span>
+                        <div class="line"></div>
+                    </div>
+    
+                    <!-- More departments initially hidden on mobile -->
+                    <div class="collapse" id="moreDepartmentsMobile">
+                        <div class="department-item">
+                            <span>Dermatology Department</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="department-item">
+                            <span>Psychology Department</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="department-item">
+                            <span>ENT Department</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="department-item">
+                            <span>Lab</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="department-item">
+                            <span>Pharmacy</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="department-item">
+                            <span>Scanning</span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+    
+                    <!-- More button for mobile -->
+                    <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#moreDepartmentsMobile" aria-expanded="false" aria-controls="moreDepartmentsMobile">
+                        More
+                    </button>
+                </div>
+            </div>
+            </div>
+            
         </div>
    
         <div class="container-fluid bg-light py-5 mt-5">
@@ -482,15 +594,19 @@
                     <div class="col col-lg-4 mb-3 mt-5 ">
                         <div class="d-flex flex-column mb-3">
                             <h5 class="font-1 fw-bold mb-2"></h5>
-                            <p class="w-75">Thrissur - Kunnamkulam Rd, Kechery, Eranellur, Kerala 680501 </p>
+                            <p class="w-75">Thrissur - Wadakancheri Rd, Kechery, Eranellur, Kerala 680501 </p>
                             <div class="d-flex flex-wrap mt-3">
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
-                                       +095672  62526
+                                     Clinic <br>  +095672  62526
+                                </div> 
+                                <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
+                                    <i class="fa-solid fa-phone"></i>
+                                      Scan Center <br>  +095672  62526
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w">
                                     <i class="fa-solid fa-envelope"></i>
-                                    hello@awesomesite.com
+                                    Oxygen@gmail.com
                                 </div>
                                
                                
