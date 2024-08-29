@@ -17,6 +17,14 @@
             background-color: green !important;
             color: white !important;
         }
+
+       
+        .card-img-top {
+            height: 150px;
+            object-fit: cover; /* Ensures the image covers the area without stretching */
+            border-radius: 0.75rem 0.75rem 0 0; /* Rounded corners for top-left and top-right */
+        }
+   
     </style>
     <title>Services</title>
 </head>
@@ -76,7 +84,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item fw-bold"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item fw-bold active" aria-current="page">Single Services</li>
+                            <li class="breadcrumb-item fw-bold active" aria-current="page"> Services</li>
                         </ol>
                     </nav>
                 </div>
@@ -86,13 +94,16 @@
         <!-- Services Section -->
         <section class="section">
             <div class="r-container">
-                <div class="d-flex flex-lg-row flex-column-reverse gap-4">
-                    <div class="col col-lg-3">
-                        <div class="d-flex flex-column gap-3 P-5">
+                <!-- Use flex-column for mobile view and flex-lg-row for large screens -->
+                <div class="d-flex flex-column flex-lg-row gap-4">
+                    
+                    <!-- Sidebar Column - Should appear first on mobile view -->
+                    <div class="col col-lg-3 order-1 order-lg-1 "> <!-- Keep order 1 for all screens -->
+                        <div class="d-flex flex-column gap-3 p-5">
                             <div class="bg-light p-4 rounded-3">
-                                <h5 class="font-1 fw-bold mb-3">All Services</h5>
+                                <h5 class="font-1 fw-bold mb-3 ">All Services</h5>
                                 <div class="list-group rounded-0" style="gap: 0.65rem;">
-                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('diabetology', this)">
+                                    <a href="#" class="list-group-item list-group-item-action shadow " aria-current="true" onclick="showServiceContent('diabetology', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Diabetology
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('gynecology', this)">
@@ -101,18 +112,9 @@
                                     <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('fetal-medicine', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Fetal Medicine
                                     </a>
-                                    <!-- <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('sample1', this)">
-                                        <i class="fa-solid fa-chevron-right me-2"></i> SAMPLE 1
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('sample2', this)">
-                                        <i class="fa-solid fa-chevron-right me-2"></i> SAMPLE 2
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('sample3', this)">
-                                        <i class="fa-solid fa-chevron-right me-2"></i> SAMPLE 3
-                                    </a> -->
                                 </div>
                             </div>
-                            <div class="position-relative rounded-3 overflow-hidden p-4" style="background-image: url(image/); background-size: cover; background-position: center;">
+                            <div class="position-relative rounded-3 overflow-hidden p-4 d-block d-none" style="background-image: url(image/); background-size: cover; background-position: center;">
                                 <div class="image-overlay-2"></div>
                                 <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center text-white p-4 text-center" style="z-index: 2;">
                                     <h4 class="font-1 fw-bold lh-1">Need Any Help ?</h4>
@@ -122,7 +124,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-lg-9">
+                    
+                    <!-- Main Content Column - Should appear second on mobile view -->
+                    <div class="col col-lg-9 order-2 order-lg-2"> <!-- Keep order 2 for all screens -->
                         <div id="service-content" class="d-flex flex-column gap-3">
                             <!-- Default Content -->
                             <img src="image/service.jpg" alt="Service Image" class="img-fluid">
@@ -137,7 +141,145 @@
                 </div>
             </div>
         </section>
+        
     </main>
+
+
+     <div class="container mt-5">
+        <div class="row">
+            <!-- General Medicine Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/gyna.jpg" class="card-img-top" alt="General Medicine">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">General Medicine</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diabetology Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/diabetic.jpg" class="card-img-top" alt="Diabetology">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Diabetology</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gynecology Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/gyna.jpg" class="card-img-top" alt="Gynecology">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gynecology</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infertility Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/infertility.jpg" class="card-img-top" alt="Infertility Department">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Infertility Department</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orthopedic Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/ortho.jpg" class="card-img-top" alt="Orthopedic Department" style="object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Orthopedic Department</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pediatric Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/pediatrics.jpg" class="card-img-top" alt="Pediatric Department">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pediatric Department</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cardiology Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/pharmacy (1).jpg" class="card-img-top" alt="Pharmacy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pharmacy</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Neurology Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/radiology.jpg" class="card-img-top" alt="  Radiology">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">  Radiology</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dermatology Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/dermatology.jpg" class="card-img-top" alt="Dermatology">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dermatology</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urology Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/scanning.jpg" class="card-img-top" alt="Scanning">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Scanning</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENT Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/ENT.jpg" class="card-img-top" alt="ENT Department">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ENT Department</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oncology Department Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card rounded shadow-sm">
+                    <img src="image/LAB.jpg" class="card-img-top" alt="Lab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lab</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer style="margin-top: 0px;">

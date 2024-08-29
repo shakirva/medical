@@ -13,7 +13,25 @@
     <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Seniorsy - About Us</title>
+    <style>
+        .responsive-text {
+            width: 400px;  /* Default width for larger screens */
+            text-align: justify;
+        }
+    
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .responsive-text {
+                width: 290px;  /* Width for screens 768px or smaller */
+            }
+        }
+    </style>
+
+
+
 </head>
+
+
 
 <body>
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
@@ -90,7 +108,7 @@
         <section class="section">
             <div class="r-container">
                 <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col mb-3 pe-lg-3 position-relative">
+                    <div class="col mt- pe-lg-3 position-relative">
                         <div class="overlay right"></div>
                         <div class="position-relative pe-5">
                             <img src="image/why.jpg" alt="" class="img-fluid" style="z-index: -2;">
@@ -114,14 +132,14 @@
                     <div class="col mb-3 mt-5">
                         <div class="d-flex flex-column gap-3 p-3">
                             <h6 class="accent-color font-2 "></h6>
-                            <h3 class="text-black font-1 lh-1 fw-semibold">See & Experience A New Perspective Of Life
+                            <h3 class="text-black font-1 lh-1 fw-semibold " style="margin-top: -30px;">See & Experience A New Perspective Of Life
                             </h3>
-                            <p class="text-gray">
+                            <p class="text-gray" style="text-align: justify; ">
                                 At Oxygen Health Care, we are committed to transforming healthcare by providing exceptional medical services with a focus on Gynecology, Diabetology, and Fetal Medicine. Our mission is to offer personalized and compassionate care to every patient, ensuring their health and well-being. 
                             </p>
                            
                             </div>
-                            <div class="my-4 border-bottom w-100 mt-5"></div>
+                            
                             <div class="row row-cols-1 row-cols-lg-2">
                                 <div class="col mb-3">
                                     <div
@@ -142,6 +160,7 @@
                                         </div>
                                         <span class="font-1 fs-3 lh-1 fw-semibold">Safe Solution For Health</span>
                                     </div>
+                                    <div class="my-4 border-bottom w-100 mt-5"></div>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +301,7 @@
                                                     <li><i class="fa-solid fa-star"></i></li>
                                                     <li><i class="fa-solid fa-star"></i></li>
                                                 </ul>
-                                                <p style="width: 400px; text-align: justify;">
+                                                <p class="responsive-text" >
                                                     Respected readers,
 Today I had been to this clinic and I was undoubtedly impressed.
 Two of the staffs in the clinic, firstly the staff in the reception Sneha, and another staff that helped in the scanning process  named Divya were really great. Their heartwarming hospitality was remarkable.
@@ -386,9 +405,9 @@ Catherine
     
             <!-- Right Side: Buttons -->
             <div class="col-md-6 d-flex justify-content-center gap-2">
-                <button type="button" class="btn btn-dark" onclick="window.location.href='tel:+1234567890';">Call</button>
-                <button type="button" class="btn btn-dark" onclick="window.location.href='https://wa.me/1234567890';">WhatsApp</button>
-                <button type="button" class="btn btn-dark" onclick="window.location.href='mailto:example@example.com';">Email</button>
+                <button type="button" class="btn btn-dark" onclick="window.location.href='tel:+09567262526';">Call</button>
+                <button type="button" class="btn btn-dark" onclick="window.location.href='https:wa.me/+09567262526';">WhatsApp</button>
+                <button type="button" class="btn btn-dark" onclick="window.location.href='oxygenhealthcarekechery@gmail.com';">Email</button>
             </div>
         </div>
     </div>
@@ -447,7 +466,7 @@ Catherine
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w">
                                     <i class="fa-solid fa-envelope"></i>
-                                    Oxygen@gmail.com
+                                    oxygenhealthcarekechery@gmail.com
                                 </div>
                                
                                
