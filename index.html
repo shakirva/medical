@@ -31,7 +31,28 @@
             margin-right: 70px;
         }
 
-        
+        .button-container {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Add margin to the top if needed */
+}
+
+.btn-view-more {
+    background-color: #006400; /* Dark Green Color */
+    color: #ffffff; /* White Text */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 10px 20px; /* Add padding for size */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.btn-view-more:hover {
+    background-color: #004d00; /* Darker Green on hover */
+}
+
     </style>
 </head>
 
@@ -106,7 +127,7 @@
                                 <a class="nav-link" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
-                        <a href="" type="button" class="btn button bg-accent-color" type="submit">Book An
+                        <a href="" type="button" class="btn button bg-accent-color disabled" type="submit">Book An
                             Appointment</a>
                     </div>
                 </div>
@@ -135,7 +156,7 @@
 
         <section class="position-relative " style="  margin-top: -80px; ">
             <div class="r-container px-lg-0 px-4">
-                <div class="overflow-hidden rounded-4">
+                <div class="overflow-hidde rounded-5">
                     <div class="row row-cols-1 row-cols-lg-5 g-4">
                         
                         <!-- Diabetology Section -->
@@ -316,11 +337,11 @@
              </div>
      
              <!-- Right Side - Doctor List with Auto-Scroll -->
-             <div class="col-md-6 overflow-auto mt-5" id="doctor-list" style="height: 500px; margin-top: 100px;">
+             <div class="col-md-6 overflo-auto mt-5 mb-5" id="doctor-list" style="height: 500px; margin-top: 100px;">
                  <!-- Doctor 1 -->
-                 <div class="card text-center mb-5" style="width: 18rem; border-radius: 15px; background-color: rgba(128, 215, 128, 0.3);">
+                 <div class="card text-center mb-5" style="width: 19rem; border-radius: 15px; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 10%, rgba(147, 222, 147, 0.4) 70%);">
                     <!-- Profile Image -->
-                    <img src="image/Doctor1.jpeg" class="card-img-top rounded-4 mx-auto mt-4" alt="Doctor Image" style="width: 130px; height: 120px;">
+                    <img src="image/Doctor1.jpeg" class="card-img-top rounded-4 mx-auto mt-4" alt="Doctor Image" style="width: 150px; height: 140px;">
                     
                     <!-- Card Body -->
                     <div class="card-body">
@@ -333,9 +354,9 @@
                 </div>
                 
                  <!-- Doctor 2 -->
-                 <div class="card text-center mt-5" style="width: 18rem; border-radius: 15px; background-color: rgba(128, 215, 128, 0.3);">
+                 <div class="card text-center mt-5" style="width: 19rem; border-radius: 15px; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 10%, rgba(147, 222, 147, 0.4) 70%);">
                     <!-- Profile Image -->
-                    <img src="image/Doctor2.jpeg" class="card-img-top rounded-4 mx-auto mt-4" alt="Doctor Image" style="width: 130px; height: 120px;">
+                    <img src="image/Doctor2.jpeg" class="card-img-top rounded-4 mx-auto mt-4" alt="Doctor Image" style="width: 150px; height: 140px;">
                     
                     <!-- Card Body -->
                     <div class="card-body">
@@ -552,9 +573,12 @@
                     </div>
     
                     <!-- More button for mobile -->
-                    <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#moreDepartmentsMobile" aria-expanded="false" aria-controls="moreDepartmentsMobile">
-                        More
-                    </button>
+                    <div class="button-container">
+                        <button class="btn btn-view-more" type="button" data-toggle="collapse" data-target="#moreDepartmentsMobile" aria-expanded="false" aria-controls="moreDepartmentsMobile">
+                            View More
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
             </div>
@@ -620,13 +644,13 @@
                         <div class="d-flex flex-column">
                             <h5 class="font-1 fw-bold mb-3"></h5>
                             <div class="d-flex flex-column gap-2">
-                                <a href="" class="d-flex flex-row gap-2 align-items-center link-light"><i
+                                <a href="index.html" class="d-flex flex-row gap-2 align-items-center link-light"><i
                                         class="fa-solid fa-chevron-right accent-color"></i> Home</a>
-                                <a href="" class="d-flex flex-row gap-2 align-items-center link-light"><i
+                                <a href="about_us.html" class="d-flex flex-row gap-2 align-items-center link-light"><i
                                         class="fa-solid fa-chevron-right accent-color"></i> About Us</a>
-                                <a href="" class="d-flex flex-row gap-2 align-items-center link-light"><i
+                                <a href="single_service.html" class="d-flex flex-row gap-2 align-items-center link-light"><i
                                         class="fa-solid fa-chevron-right accent-color"></i> Services</a>
-                                <a href="" class="d-flex flex-row gap-2 align-items-center link-light"><i
+                                <a href="contact.html" class="d-flex flex-row gap-2 align-items-center link-light"><i
                                         class="fa-solid fa-chevron-right accent-color"></i>Contact Us</a>
                                 
                             </div>
@@ -639,15 +663,15 @@
                             <div class="d-flex flex-wrap mt-3">
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
-                                     Clinic <br>  +095672  62526
+                                   +09567262526 (Clinic)
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
-                                      Scan Center <br>  +095672  62526
+                                    +09567262526 (Scan)
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w">
                                     <i class="fa-solid fa-envelope"></i>
-                                    Oxygen@gmail.com
+                                    oxygenhealthcarekechery@gmail.com
                                 </div>
                                
                                
@@ -676,17 +700,30 @@
         <!-- Navigation Links -->
         <div class="mb-3">
             <ul class="list-unstyled">
-                <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
-                <li><a href="#" class="text-white text-decoration-none">Services</a></li>
-                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="about_us.html" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="single_service.html" class="text-white text-decoration-none">Services</a></li>
+                <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
             </ul>
         </div>
         
         <!-- Address -->
         <div>
-            <p class="mb-0">Thrissur - Wadakancheri Rd,<br>Kecheri, Eranellur, Kerala 680501</p>
+            <p class="mb-4">Thrissur - Wadakancheri Rd,<br>Kecheri, Eranellur, Kerala 680501</p>
         </div>
+
+         <!-- Address and Contact Information -->
+    <div class="mb-3">
+        
+        <p class="mb-1">Clinic +095672 62526</p>
+        <p class="mb-1">Scan Center +095672 62526</p>
+        <p class="mb-1">oxygenhealthcarekechery@gmail.com</p>
+    </div>
+    
+    <!-- Copyright Information -->
+    <div>
+        <p class="mb-0">© Copyright 2024. All Rights Reserved. Sygmetiv Business Solutions</p>
+    </div>
     </footer>
     
 
