@@ -45,19 +45,21 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <div class="logo-container">
-                            <img src="image/logo.png" alt="Logo" class="img-fluid">
+                            <img src="image/logo.png" alt="" class="img-fluid">
                         </div>
                     </a>
-                    <button class="navbar-toggler accent-color border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler accent-color border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-2 fw-semibold gap-lg-3">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-2 fw-semibold gap-lg-5 me-4">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Homepage</a>
+                                <a class="nav-link" href="index.html">Homepage</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="about_us.html">About Us</a>
+                                <a class="nav-link" href="about_us.html">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="single_service.html">Services</a>
@@ -66,7 +68,6 @@
                                 <a class="nav-link" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
-                        <a href="#" type="button" class="btn button bg-accent-color disabled">Book An Appointment</a>
                     </div>
                 </div>
             </nav>
@@ -103,13 +104,13 @@
                             <div class="bg-light p-4 rounded-3">
                                 <h5 class="font-1 fw-bold mb-3 ">All Services</h5>
                                 <div class="list-group rounded-0" style="gap: 0.65rem;">
-                                    <a href="#" class="list-group-item list-group-item-action shadow " aria-current="true" onclick="showServiceContent('diabetology', this)">
+                                    <a href="#" class="p-1 list-group-item list-group-item-action shadow " aria-current="true" onclick="showServiceContent('diabetology', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Diabetology
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('gynecology', this)">
+                                    <a href="#" class=" p-1 list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('gynecology', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Gynecology
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('fetal-medicine', this)">
+                                    <a href="#" class=" p-1 list-group-item-action shadow" aria-current="true" onclick="showServiceContent('fetal-medicine', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Fetal Medicine
                                     </a>
                                     <!-- <a href="#" class="list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('fetal-medicine', this)">
@@ -148,141 +149,145 @@
     </main>
 
 
-     <div class="container mt-5">
-        <div class="row">
-            <!-- General Medicine Card -->
-            <div class="col-md-4 mb-4 ">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/gyna.jpg" class="card-img-top" alt="General Medicine">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">General Medicine</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+   <div class="container mt-5">
+    <div class="row">
+        <!-- General Medicine Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/gyna.jpg" class="card-img-top" alt="General Medicine">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">General Medicine</h5>
+                    <p class="card-text mb-0">Our General Medicine department offers comprehensive primary care services, including routine check-ups, diagnosis, and treatment of common illnesses.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Diabetology Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/diabetic.jpg" class="card-img-top" alt="Diabetology">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Diabetology</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Diabetology Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/diabetic.jpg" class="card-img-top" alt="Diabetology">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Diabetology</h5>
+                    <p class="card-text mb-0">Comprehensive women's health services, including pregnancy care, reproductive health, preventative screenings, wellness support, and personalized treatment plans.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Gynecology Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/gyna.jpg" class="card-img-top" alt="Gynecology">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Gynecology</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Gynecology Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/gyna.jpg" class="card-img-top" alt="Gynecology">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Gynecology</h5>
+                    <p class="card-text mb-0">Comprehensive women's health services, including pregnancy care, reproductive health, preventative screenings, and wellness support.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Infertility Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/infertility.jpg" class="card-img-top" alt="Infertility Department">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Infertility Department</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Infertility Department Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/infertility.jpg" class="card-img-top" alt="Infertility Department">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Infertility Department</h5>
+                    <p class="card-text mb-0">Specialized care for couples facing challenges with conception.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Orthopedic Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/ortho.jpg" class="card-img-top" alt="Orthopedic Department" style="object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Orthopedic Department</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Orthopedic Department Card -->
+        <!-- <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/ortho.jpg" class="card-img-top" alt="Orthopedic Department">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Orthopedic Department</h5>
+                    <p class="card-text mb-0">Diagnosis and treatment of musculoskeletal disorders and injuries.</p>
                 </div>
             </div>
+        </div> -->
 
-            <!-- Pediatric Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/pediatrics.jpg" class="card-img-top" alt="Pediatric Department">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Pediatric Department</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Pediatric Department Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/pediatrics.jpg" class="card-img-top" alt="Pediatric Department">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Fetal Medicine</h5>
+                    <p class="card-text mb-0">Comprehensive fetal medicine services,  genetic counseling, and advanced fetal therapies to support maternal and fetal health throughout pregnancy.
+
+                    </p>
                 </div>
             </div>
+        </div>
 
-            <!-- Cardiology Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/pharmacy (1).jpg" class="card-img-top" alt="Pharmacy">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Pharmacy</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Pharmacy Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/pharmacy (1).jpg" class="card-img-top" alt="Pharmacy">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Pharmacy</h5>
+                    <p class="card-text mb-0">Comprehensive pharmaceutical services, including prescription dispensing, medication counseling, and over-the-counter product recommendations.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Neurology Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/radiology.jpg" class="card-img-top" alt="  Radiology">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">  Radiology</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Radiology Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/radiology.jpg" class="card-img-top" alt="Radiology">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Radiology</h5>
+                    <p class="card-text mb-0">Advanced imaging services using state-of-the-art equipment for accurate diagnosis and treatment planning.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Dermatology Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/dermatology.jpg" class="card-img-top" alt="Dermatology">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Dermatology</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Dermatology Card -->
+        <!-- <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/dermatology.jpg" class="card-img-top" alt="Dermatology">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Dermatology</h5>
+                    <p class="card-text mb-0">Specialized care for skin conditions, including acne, eczema, psoriasis, and skin cancer.</p>
                 </div>
             </div>
+        </div> -->
 
-            <!-- Urology Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/scanning.jpg" class="card-img-top" alt="Scanning">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Scanning</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Scanning Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/scanning.jpg" class="card-img-top" alt="Scanning">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Scanning</h5>
+                    <p class="card-text mb-0">Advanced non-invasive imaging techniques for diagnosing various medical conditions with precision and safety.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- ENT Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/ENT.jpg" class="card-img-top" alt="ENT Department">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">ENT Department</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- ENT Department Card -->
+        <!-- <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/ENT.jpg" class="card-img-top" alt="ENT Department">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">ENT Department</h5>
+                    <p class="card-text mb-0">Expert care for ear, nose, and throat disorders, including hearing loss, sinus infections, allergies, and related conditions.</p>
                 </div>
             </div>
+        </div> -->
 
-            <!-- Oncology Department Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card rounded-4 shadow-sm">
-                    <img src="image/LAB.jpg" class="card-img-top" alt="Lab">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Lab</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                    </div>
+        <!-- Lab Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/LAB.jpg" class="card-img-top" alt="Lab">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Lab</h5>
+                    <p class="card-text mb-0">Accurate and timely laboratory testing for a wide range of medical conditions, including blood tests, urinalysis, and microbiological analysis.</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+    
 
     <!-- Footer -->
     <footer class="d-none d-lg-block" style="margin-top: 0px;">
@@ -327,7 +332,7 @@
                     <div class="col col-lg-4 mb-3 mt-5 ">
                         <div class="d-flex flex-column mb-3">
                             <h5 class="font-1 fw-bold mb-2"></h5>
-                            <p class="w-75">Thrissur - Wadakancheri Rd, Kechery, Eranellur, Kerala 680501 </p>
+                            <p class="w-75"> Wadakancheri Rd, Kechery, Eranellur, Thrissur, Kerala 680501 </p>
                             <div class="d-flex flex-wrap mt-3">
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
@@ -335,7 +340,7 @@
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
-                                    +09567262526 (Scan)
+                                    +07356444546 (Scan)
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w">
                                     <i class="fa-solid fa-envelope"></i>
@@ -377,14 +382,14 @@
         
         <!-- Address -->
         <div>
-            <p class="mb-4">Thrissur - Wadakancheri Rd,<br>Kecheri, Eranellur, Kerala 680501</p>
+            <p class="mb-4"> Wadakancheri Rd,<br>Kecheri, Eranellur, Thrissur, Kerala 680501</p>
         </div>
 
          <!-- Address and Contact Information -->
     <div class="mb-3">
         
         <p class="mb-1">Clinic +095672 62526</p>
-        <p class="mb-1">Scan Center +095672 62526</p>
+        <p class="mb-1">Scan Center +07356444546 (Scan)</p>
         <p class="mb-1">oxygenhealthcarekechery@gmail.com</p>
     </div>
     
@@ -393,6 +398,7 @@
         <p class="mb-0">© Copyright 2024. <br> All Rights Reserved. Sygmetiv Business Solutions</p>
     </div>
     </footer>
+
 
     <script>
         function showServiceContent(service, element) {
@@ -433,6 +439,21 @@
             element.classList.add('active-service');
         }
     </script>
+    <script>
+        // JavaScript to dynamically set the active class based on the current page URL
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentUrl = window.location.href;
+        
+            navLinks.forEach(link => {
+                if (link.href === currentUrl) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+        });
+        </script>
 </body>
 
 </html>

@@ -42,27 +42,20 @@
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-2 fw-semibold gap-lg-3">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-2 fw-semibold gap-lg-5 me-4">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Homepage</a>
+                                <a class="nav-link" href="index.html">Homepage</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="about_us.html">About Us</a>
-                            </li>
-                           
-                                <ul class="dropdown-menu"> href="single_service.html"> Services</a>
-                              
-                                </ul>
+                                <a class="nav-link" href="about_us.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="single_service.html"> Services</a>
+                                <a class="nav-link" href="single_service.html">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
-                        <a href="" type="button" class="btn button bg-accent-color disabled" type="submit">Book An
-                            Appointment</a>
                     </div>
                 </div>
             </nav>
@@ -108,7 +101,7 @@
                                    
                                     <div class="d-flex flex-row justify-content-between">
                                         <span>Tuesday</span>
-                                        <span>09 am–09 pm</span>
+                                        <span>01 am–09 pm</span>
                                     </div>
                                     <div class="d-flex flex-row justify-content-between">
                                         <span>Wednesday</span>
@@ -116,11 +109,11 @@
                                     </div>
                                     <div class="d-flex flex-row justify-content-between">
                                         <span>Thursday</span>
-                                        <span>09 pm–12 am</span>
+                                        <span>01 pm–09 am</span>
                                     </div>
                                     <div class="d-flex flex-row justify-content-between">
                                         <span>Friday</span>
-                                        <span>12 am–09 pm</span>
+                                        <span>01 am–09 pm</span>
                                     </div>
                                     <div class="d-flex flex-row justify-content-between">
                                         <span>Saturday</span>
@@ -145,7 +138,7 @@
                                         <h6 class="font-1 fw-bold lh-1 m-0 text-gray">
                                             Visit Us
                                         </h6>
-                                        <span class="fs-5 fw-bold font-1">Thrissur - Kunnamkulam Rd, Kechery, Eranellur, Kerala 680501</span>
+                                        <span class="fs-5 fw-bold font-1">Wadakancheri Rd, Kechery, Eranellur, Thrissur, Kerala 680501</span>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row gap-3 align-items-center">
@@ -158,7 +151,7 @@
                                         <h6 class="font-1 fw-bold lh-1 m-0 text-gray">
                                             Our Email
                                         </h6>
-                                        <span class="fs-5 fw-bold font-1">oxygen@gmail.com</span>
+                                        <span class="fs-5 fw-bold font-1">oxygenhealthcarekechery@gmail.com</span>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row gap-3 align-items-center">
@@ -182,61 +175,29 @@
                             <div class="h-100 d-flex flex-column p-5">
                                 <h6 class="font-2 text-white">Fill The Form</h6>
                                 <h3 class="font-1 lh-1 fw-bold fs-1 mb-3 text-white">Get In Touch</h3>
-                                <div class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-0 my-4"
-                                    role="alert" aria-live="assertive" aria-atomic="true">
-                                    <div class="d-flex p-2">
-                                        <div
-                                            class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
-                                            <i class="fa-solid fa-check f-36 text-success"></i>
-                                            Your Message Successfully Send.
-                                        </div>
-                                        <button type="button"
-                                            class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
-                                            data-bs-dismiss="toast" aria-label="Close"><i
-                                                class="fa-solid fa-xmark"></i></button>
-                                    </div>
-                                </div>
-                                <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-0"
-                                    role="alert" aria-live="assertive" aria-atomic="true">
-                                    <div class="d-flex p-2">
-                                        <div
-                                            class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
-                                            <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
-                                            Something Wrong ! Send Form Failed.
-                                        </div>
-                                        <button type="button"
-                                            class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
-                                            data-bs-dismiss="toast" aria-label="Close"><i
-                                                class="fa-solid fa-xmark"></i></button>
-                                    </div>
-                                </div>
-                                <form action=""
-                                    class="d-flex flex-column h-100 justify-content-center w-100 needs-validation mb-3 form"
-                                    novalidate>
+                                
+                                <!-- Form Starts Here -->
+                                <form onsubmit="sendWhatsAppMessage(event)" class="d-flex flex-column h-100 justify-content-center w-100 needs-validation mb-3 form" novalidate>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control py-2 px-4" name="name" id="name"
-                                            placeholder="Name" required>
+                                        <input type="text" class="form-control py-2 px-4" name="name" id="name" placeholder="Name" required>
                                         <div class="invalid-feedback">
                                             The field is required.
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="email" class="form-control py-2 px-4" name="email" id="email"
-                                            placeholder="Email" required>
+                                        <input type="email" class="form-control py-2 px-4" name="email" id="email" placeholder="Email" required>
                                         <div class="invalid-feedback">
                                             The field is required.
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control py-2 px-4" name="subject" id="subject"
-                                            placeholder="Subject" required>
+                                        <input type="text" class="form-control py-2 px-4" name="subject" id="subject" placeholder="Subject" required>
                                         <div class="invalid-feedback">
                                             The field is required.
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <textarea class="form-control py-2 px-4" id="message" name="message" rows="5"
-                                            placeholder="Message"></textarea>
+                                        <textarea class="form-control py-2 px-4" id="message" name="message" rows="5" placeholder="Message"></textarea>
                                     </div>
                                     <div class="mb-3">
                                         <button type="submit" class="btn submit_form py-3">
@@ -244,10 +205,11 @@
                                         </button>
                                     </div>
                                 </form>
-
                             </div>
                         </div>
                     </div>
+                </div>
+            
                 </div>
             </div>
         </section>
@@ -307,7 +269,7 @@
                     <div class="col col-lg-4 mb-3 mt-5 ">
                         <div class="d-flex flex-column mb-3">
                             <h5 class="font-1 fw-bold mb-2"></h5>
-                            <p class="w-75">Thrissur - Wadakancheri Rd, Kechery, Eranellur, Kerala 680501 </p>
+                            <p class="w-75"> Wadakancheri Rd, Kechery, Eranellur, Thrissur, Kerala 680501 </p>
                             <div class="d-flex flex-wrap mt-3">
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
@@ -315,7 +277,7 @@
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
-                                    +09567262526 (Scan)
+                                    +07356444546 (Scan)
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w">
                                     <i class="fa-solid fa-envelope"></i>
@@ -357,14 +319,14 @@
         
         <!-- Address -->
         <div>
-            <p class="mb-4">Thrissur - Wadakancheri Rd,<br>Kecheri, Eranellur, Kerala 680501</p>
+            <p class="mb-4"> Wadakancheri Rd,<br>Kecheri, Eranellur, Thrissur, Kerala 680501</p>
         </div>
 
          <!-- Address and Contact Information -->
     <div class="mb-3">
         
         <p class="mb-1">Clinic +095672 62526</p>
-        <p class="mb-1">Scan Center +095672 62526</p>
+        <p class="mb-1">Scan Center +07356444546 (Scan)</p>
         <p class="mb-1">oxygenhealthcarekechery@gmail.com</p>
     </div>
     
@@ -373,8 +335,46 @@
         <p class="mb-0">© Copyright 2024. <br> All Rights Reserved. Sygmetiv Business Solutions</p>
     </div>
     </footer>
+
+    
     <script src="js/vendor/fslightbox.js"></script>
     <script src="js/masonry.js"></script>
+    <script>
+        // JavaScript to dynamically set the active class based on the current page URL
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentUrl = window.location.href;
+        
+            navLinks.forEach(link => {
+                if (link.href === currentUrl) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+        });
+        </script>
+          <script>
+            function sendWhatsAppMessage(event) {
+                event.preventDefault(); // Prevent form submission
+        
+                // Get form values
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const subject = document.getElementById("subject").value;
+                const message = document.getElementById("message").value;
+        
+                // Prepare WhatsApp URL with properly formatted message
+                const phoneNumber = "8086645733"; // Replace with your WhatsApp number
+                const text = `I am ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+                const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+        
+                // Redirect to WhatsApp
+                window.open(whatsappURL, "_blank");
+            }
+        </script>
+        
+        
 </body>
 
 </html>
