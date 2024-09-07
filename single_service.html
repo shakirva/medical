@@ -110,6 +110,9 @@
                                     <a href="#" class=" p-1 list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('gynecology', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Gynecology
                                     </a>
+                                    <a href="#" class=" p-1 list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('radiology', this)">
+                                        <i class="fa-solid fa-chevron-right me-2"></i> Radiology
+                                    </a>
                                     <a href="#" class=" p-1 list-group-item list-group-item-action shadow" aria-current="true" onclick="showServiceContent('fetal-medicine', this)">
                                         <i class="fa-solid fa-chevron-right me-2"></i> Fetal Medicine
                                     </a>
@@ -205,7 +208,15 @@
                 </div>
             </div>
         </div> -->
-
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
+                <img src="image/radiology.jpg" class="card-img-top" alt="Radiology">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
+                    <h5 class="card-title mb-2">Radiology</h5>
+                    <p class="card-text mb-0">Advanced imaging services using state-of-the-art equipment for accurate diagnosis and treatment planning.</p>
+                </div>
+            </div>
+        </div>
         <!-- Pediatric Department Card -->
         <div class="col-md-4 mb-4">
             <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
@@ -231,15 +242,7 @@
         </div>
 
         <!-- Radiology Card -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
-                <img src="image/radiology.jpg" class="card-img-top" alt="Radiology">
-                <div class="card-body text-center d-flex flex-column justify-content-between">
-                    <h5 class="card-title mb-2">Radiology</h5>
-                    <p class="card-text mb-0">Advanced imaging services using state-of-the-art equipment for accurate diagnosis and treatment planning.</p>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Dermatology Card -->
         <!-- <div class="col-md-4 mb-4">
@@ -253,7 +256,7 @@
         </div> -->
 
         <!-- Scanning Card -->
-        <div class="col-md-4 mb-4">
+        <!-- <div class="col-md-4 mb-4">
             <div class="card h-100 rounded-4 shadow-sm d-flex flex-column">
                 <img src="image/scanning.jpg" class="card-img-top" alt="Scanning">
                 <div class="card-body text-center d-flex flex-column justify-content-between">
@@ -261,7 +264,7 @@
                     <p class="card-text mb-0">Advanced non-invasive imaging techniques for diagnosing various medical conditions with precision and safety.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- ENT Department Card -->
         <!-- <div class="col-md-4 mb-4">
@@ -334,13 +337,17 @@
                             <h5 class="font-1 fw-bold mb-2"></h5>
                             <p class="w-75"> Wadakancheri Rd, Kechery, Eranellur, Thrissur, Kerala 680501 </p>
                             <div class="d-flex flex-wrap mt-3">
-                                <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
+                                <div class="d-flex flex-row me-2 gap-2 align-items-center w-100 ">
                                     <i class="fa-solid fa-phone"></i>
-                                   +09567262526 (Clinic)
+                                    81 36 81 48 15 (Reception)
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
                                     <i class="fa-solid fa-phone"></i>
-                                    +07356444546 (Scan)
+                                   95 67 26 25 26 (Clinic)
+                                </div> 
+                                <div class="d-flex flex-row me-2 gap-2 align-items-center w-50 ">
+                                    <i class="fa-solid fa-phone"></i>
+                                    73 56 44 45 46 (Scan)
                                 </div> 
                                 <div class="d-flex flex-row me-2 gap-2 align-items-center w">
                                     <i class="fa-solid fa-envelope"></i>
@@ -389,9 +396,9 @@
 
          <!-- Address and Contact Information -->
     <div class="mb-3">
-        
-        <p class="mb-1">Clinic +095672 62526</p>
-        <p class="mb-1">Scan Center +07356444546 (Scan)</p>
+        <p class="mb-1">Reception 81 36 81 48 15</p>
+        <p class="mb-1">Clinic 95 67 26 25 26</p>
+        <p class="mb-1">Scan Center 73 56 44 45 46 </p>
         <p class="mb-1">oxygenhealthcarekechery@gmail.com</p>
     </div>
     
@@ -405,6 +412,7 @@
     </div>
     
     </footer>
+
 
 
     <script>
@@ -422,9 +430,9 @@
                     'image': 'image/service-3.jpg',
                     'description': 'Fetal medicine, also known as maternal-fetal medicine, is a specialized field within obstetrics that focuses on the health and well-being of the fetus during pregnancy. It involves the monitoring, diagnosis, and treatment of fetal conditions, including genetic disorders, congenital anomalies, and growth abnormalities. Specialists in fetal medicine use advanced imaging techniques like ultrasound and fetal MRI, as well as diagnostic procedures such as amniocentesis, to assess the fetuss development and identify potential issues early on. This field also includes the management of high-risk pregnancies, where complications such as preeclampsia, gestational diabetes, or multiple pregnancies might endanger the health of the mother or the fetus. Fetal medicine aims to optimize outcomes for both mother and child, sometimes involving in-utero treatments or planning for specialized care immediately after birth.'
                 },
-                'sample1': {
-                    'image': 'image/sample1.jpg',
-                    'description': 'Detailed information about Sample 1 services.'
+                'radiology': {
+                    'image': 'image/radiology.jpg',
+                    'description': 'Radiology is a specialized field of medicine focused on the use of medical imaging to diagnose, monitor, and treat various conditions and diseases. Radiologists employ advanced imaging techniques, such as X-rays, computed tomography (CT), magnetic resonance imaging (MRI), ultrasound, and nuclear medicine, to visualize the internal structures of the body. These technologies allow for detailed examination of bones, tissues, organs, and blood vessels, helping to detect abnormalities, injuries, or diseases at an early stage. Radiology plays a crucial role in managing a wide range of medical conditions, from fractures and infections to cancer and cardiovascular diseases. In addition to diagnostics, radiology also encompasses interventional procedures, where minimally invasive techniques guided by imaging are used to treat conditions like tumors, blockages, or vascular malformations. The goal of radiology is to provide accurate, non-invasive insights that assist in effective diagnosis, treatment planning, and patient care.'
                 },
                 'sample2': {
                     'image': 'image/sample2.jpg',
